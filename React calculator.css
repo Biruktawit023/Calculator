@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.calculator {
+  background: #2d2d2d;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 340px;
+}
+
+.display {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.memory-indicator {
+  color: #667eea;
+  font-size: 12px;
+  margin-bottom: 5px;
+  min-height: 15px;
+}
+
+.previous-operand {
+  color: #888;
+  font-size: 18px;
+  margin-bottom: 5px;
+  min-height: 25px;
+}
+
+.current-operand {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  word-wrap: break-word;
+  word-break: break-all;
+  min-height: 45px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.btn-number {
+  background: #505050;
+  color: #fff;
+}
+
+.btn-number:hover {
+  background: #606060;
+}
+
+.btn-operator {
+  background: #ff9500;
+  color: #fff;
+}
+
+.btn-operator:hover {
+  background: #ffb143;
+}
+
+.btn-operator.active {
+  background: #fff;
+  color: #ff9500;
+}
+
+.btn-function {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+.btn-function:hover {
+  background: #4a4a4a;
+}
+
+.btn-equals {
+  background: #667eea;
+  color: #fff;
+}
+
+.btn-equals:hover {
+  background: #7c8ef0;
+}
+
+.btn-memory {
+  background: #764ba2;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn-memory:hover {
+  background: #8a5cb8;
+}
+
+.span-two {
+  grid-column: span 2;
+}
